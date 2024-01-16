@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:news_upwork/view/home/home_screen.dart';
+import 'package:news_upwork/bottonmNavBar.dart';
+import 'package:news_upwork/homeScreen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -20,7 +21,10 @@ class _SplashScreenState extends State<SplashScreen> {
 
     Timer(Duration(seconds: 2), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => HomeScreen()));
+          context,
+          MaterialPageRoute(
+            builder: (context) => BottomNavBar(),
+          ));
     });
   }
 

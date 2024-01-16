@@ -44,6 +44,8 @@ dependencies:
   equatable:
   bloc:
   flutter_bloc: ^8.0.1
+  url_launcher: ^6.2.3
+  hero_animation: ^1.1.4
 
 dev_dependencies:
   flutter_test:
