@@ -3,14 +3,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:news_upwork/newsDetail.dart';
 import 'package:news_upwork/sizeConfigh.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class SecondHome extends StatefulWidget {
+  const SecondHome({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<SecondHome> createState() => _SecondHomeState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _SecondHomeState extends State<SecondHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

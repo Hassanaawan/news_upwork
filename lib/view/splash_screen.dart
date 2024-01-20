@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:news_upwork/bottonmNavBar.dart';
+
+import '../bottonmNavBar.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -20,17 +21,14 @@ class _SplashScreenState extends State<SplashScreen> {
 
     Timer(Duration(seconds: 2), () {
       Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) => BottomNavBar(),
-          ));
+          context, MaterialPageRoute(builder: (context) => BottomNavBar()));
     });
   }
 
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.sizeOf(context).height * 1;
-    // final width = MediaQuery.sizeOf(context).width * 1;
+    final width = MediaQuery.sizeOf(context).width * 1;
 
     return Scaffold(
       body: Container(

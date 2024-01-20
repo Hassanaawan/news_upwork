@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:news_upwork/homeScreen.dart';
+
 import 'package:news_upwork/sizeConfigh.dart';
+import 'package:news_upwork/view/cateogires_screen.dart';
+import 'package:news_upwork/view/home/categories.dart';
+import 'package:news_upwork/view/home/home_screen.dart';
+import 'package:news_upwork/view/home/widgets/signsScreen.dart';
+import 'package:news_upwork/view/home/widgets/storiesScreen.dart';
 
 class BottomNavBar extends StatefulWidget {
-  const BottomNavBar({super.key});
+  const BottomNavBar({Key? key});
 
   @override
   State<BottomNavBar> createState() => _BottomNavBarState();
@@ -15,22 +20,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    Text(
-      'Index 1: News',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 3: Shows',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: Signs',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: Stories',
-      style: optionStyle,
-    ),
+    CategoriesScreen(),
+    ShowsScreen(),
+    SignsScreen(),
+    StoriesScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -92,3 +85,4 @@ class _BottomNavBarState extends State<BottomNavBar> {
     );
   }
 }
+//CategoriesScreen
